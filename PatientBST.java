@@ -32,6 +32,9 @@ public class PatientBST {
         else if (patient.patientId > root.patient.patientId) {
             root.right = insertPatient(root.right, patient);
         }
+        else {
+            System.out.println("Patient ID already exists.");
+        }
 
         return root;
     }
