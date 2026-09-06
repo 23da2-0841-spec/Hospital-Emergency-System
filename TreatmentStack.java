@@ -11,6 +11,12 @@ public class TreatmentStack {
 
     // Add a completed treatment record
     public void push(String treatmentRecord) {
+
+        if (treatmentRecord == null || treatmentRecord.trim().isEmpty()) {
+            System.out.println("Cannot add an empty treatment record.");
+            return;
+        }
+
         treatmentStack.push(treatmentRecord);
         System.out.println("Treatment record added successfully.");
     }
