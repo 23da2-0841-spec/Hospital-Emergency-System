@@ -104,6 +104,26 @@ Main Features
 * Empty queue and stack handling
 * Duplicate ID validation
 
+Menu Options
+
+The system provides the following menu options:
+
+1. Register Patient
+2. Search Patient
+3. Delete Patient
+4. Display All Patients
+5. Add Emergency Patient
+6. Treat Next Patient
+7. Display Waiting Queue
+8. Add Treatment Record
+9. Remove Latest Treatment
+10. Display Treatment History
+11. Add Patient Visit
+12. Remove Patient Visit
+13. Search Patient Visit
+14. Display Patient Visits
+15. Exit
+
 Project Structure
 
 Hospital Emergency System
