@@ -29,6 +29,19 @@ public class VisitLinkedList {
                          String doctorName, String diagnosis,
                          String treatment) {
 
+        // Check for duplicate Visit ID
+        VisitNode check = head;
+
+        while (check != null) {
+
+            if (check.visitId == visitId) {
+                System.out.println("Visit ID already exists.");
+                return;
+            }
+
+            check = check.next;
+        }
+
         VisitNode newVisit = new VisitNode(
             visitId,
             visitDate,
