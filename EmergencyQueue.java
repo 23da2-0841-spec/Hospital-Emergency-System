@@ -12,6 +12,12 @@ public class EmergencyQueue {
 
     // Add patient to the emergency queue
     public void enqueue(Patient patient) {
+
+        if (patient == null) {
+            System.out.println("Cannot add an invalid patient to the queue.");
+            return;
+        }
+
         queue.add(patient);
         System.out.println("Patient added to emergency queue.");
     }
